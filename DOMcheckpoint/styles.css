@@ -1,0 +1,67 @@
+i {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  color: red;
+}
+
+.fa {
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: rgb(190, 26, 26);
+}
+
+.unit-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.plus-btn,
+.minus-btn {
+  font-size: 30px;
+  margin: 10px;
+  /* color: rgb(233, 156, 226); */
+}
+.total-price-container {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.total-price-container span {
+  font-size: 30px;
+  /* font-weight: 20px; */
+}
+
+/* Card content CSS */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  margin: 2%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0%;
+}
+.qute {
+  font-size: 25px;
+}
+
+.list-group-item i {
+  margin: 10px;
+}
+
+.fa-trash-alt {
+  font-size: 30px;
+  color: #dd6b5c;
+}
