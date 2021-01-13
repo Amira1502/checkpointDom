@@ -5,17 +5,13 @@
 // });
 
 // declration des variables
-let btnPlus = Array.from(document.querySelectorAll(".plus-btn"));
-let qte = Array.from(document.querySelectorAll(".qte"));
-let btnMoins = Array.from(document.querySelectorAll(".fa fa-minus-circle"));
-let deleteBtn  = Array.from(document.getElementsByClassName(".fa fa-trash"));
 
 let deleteBtns = Array.from(document.querySelectorAll(".fa-trash-alt"))
 let cards = Array.from(document.querySelectorAll(".card"))
 let plusBtns = Array.from(document.querySelectorAll(".plus-btn"))
 let minusBtns = Array.from(document.querySelectorAll(".minus-btn"))
 let totalPrice = document.querySelector(".total-price")
-
+let favs = Array.from(document.querySelectorAll(".fa-heart"))
 
 // Remove button Part
 for (let i in deleteBtns) {
@@ -44,7 +40,6 @@ for (let minusBtn of minusBtns) {
 
 }
 
-
 // Total price
 function total() {
     let quantities = Array.from(document.querySelectorAll(".qute"))
@@ -57,7 +52,8 @@ function total() {
 }
 
 //toggle heart
-function heart(x) {
-  x.classList.toggle("fa-heart-down");
+for (let fav of favs) {
+    fav.addEventListener("click", function () {
+        fav.style.color === 'red' ? fav.style.color = '#212529' : fav.style.color = 'red'
+    })
 }
-
